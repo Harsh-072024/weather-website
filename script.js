@@ -70,7 +70,7 @@ the data from the weather API*/
 function fetchWeatherData() {
     /* Fetch the data  and dynamically add the city name with trempelate literals*/
     /*USE YOUR OWN KEY */
-    fetch(`http://api.weatherapi.com/v1/current.json?key=1670b22de4f64e5cb69114444241708&q=${cityInput}`)
+ fetch(`https://api.weatherapi.com/v1/current.json?key=1670b22de4f64e5cb69114444241708&q=${cityInput}`)
     /*Take the dta (Which is JSON format and convert it to a regular JS object) */
     .then(response => response.json())
     .then (data => {
